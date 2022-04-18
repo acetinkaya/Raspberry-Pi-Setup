@@ -23,7 +23,7 @@ Kurulum İşlemleri İçin Gerekenler;
 Kurulum işlemleri tamamlandıktan sonra ayarlar ve yapılandırma işlemleri gerekmektedir. Bu işlemler sırası ile;
 
 --- Ayarlar ---
-Menü’den  Preferences  “Rasberry Pi Configuration” bölümünü açıyoruz. 
+Menü’den >>> Preferences >>> “Rasberry Pi Configuration” bölümünü açıyoruz. 
 •	Raspberry üzerinde ayarlar ve yapılandırmalar açılan menü/pencere üzerinde olacaktır.
 •	İlgili Menunun detaylı anlatım ve görsel içerikleri bu link üzerindedir https://www.raspberrypi.com/documentation/computers/configuration.html 
 •	Raspberry üzerinde açılan menü “Raspberry Pi Configuration” Raspberry donanımı üzerinde açılıp kapanmasını istediğiniz portlar, görüntü ayarları, arayüz ayarları, şifre işlemleri, donanım performans ayarları, konum işlemlerine bağlı olarak saat ve gün ve wifi ayarlarını yapılabilmektedir. İlgili menülerin aktif veya pasif yaptıktan sonra donanım resetlenmek isteyecektir. Onayınız sonrası sistem yeniden başlatılacaktır. 
@@ -32,11 +32,11 @@ DİP NOT: Açıp kapattığınız ayarları bir noktalara kaydetmenizi tavsiye e
 --- Ayarlar Tamamlandı ---
 
 Raspberry Pi’yi kendi donanımına bağlı klavye,mause ve monitör ile veya uzaktaki bir cihazdan yönetmenize imkan tanımaktadır. Uzaktan bağlanma durumunda “Raspberry Pi Configuration”  bölümünden SSH ve VNC etkinleştirmesi gerekmektedir. 
-“Raspberry Pi Configuration”   Interfaces  SSH  Enable seçerek uzaktan erişimi aktif hale getiriyoruz. 
-•	Komut satırından sudo raspi-config  5 Interfacing Options  P2 SSH  ENABLED  YES işlem adımları ile SSH’ı aktif hale getirebilmekteyiz. 
-•	sudo systemctl status ssh  yazıldığında “active (running)” ifadesinin görülmesi gerekmektedir.  
-•	VNC arayüzünü bağlantı kurmak için kullanacağız. “Raspberry Pi Configuration”   Interfaces  VNC  Enable seçerek erişimi aktif hale getiriyoruz.
-•	Komut satırından sudo raspi-config  5 Interfacing Options  P3 VNC  ENABLED  YES işlem adımları ile VNC’yi aktif hale getirebilmekteyiz. 
+“Raspberry Pi Configuration”  >>> Interfaces >>> SSH >>> Enable seçerek uzaktan erişimi aktif hale getiriyoruz. 
+•	Komut satırından sudo raspi-config >>> 3 Interfacing Options >>> I2 SSH >>> ENABLED >>> YES işlem adımları ile SSH’ı aktif hale getirebilmekteyiz. 
+•	sudo systemctl status ssh >>> yazıldığında “active (running)” ifadesinin görülmesi gerekmektedir.  
+•	VNC arayüzünü bağlantı kurmak için kullanacağız. “Raspberry Pi Configuration”  >>> Interfaces >>> VNC >>> Enable seçerek erişimi aktif hale getiriyoruz.
+•	Komut satırından sudo raspi-config >>> 5 Interfacing Options >>> I3 VNC >>> ENABLED >>> YES işlem adımları ile VNC’yi aktif hale getirebilmekteyiz. 
 Bu işlemler ile Raspberry yanınızda olmadığında modemden Raspberry’e port açıp uzaktan bağlantı sağlayabiliyoruz.
 
-<<<<<<<<<<<Devamı Gelecek>>>>>>>>>>>>
+
