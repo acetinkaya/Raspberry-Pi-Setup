@@ -86,6 +86,37 @@ Bu bölüm içerisinde Raspberry Pi’nin komut düzeyinde kullanımı belirtilm
 
 •	“touch” >>> istediğimiz dosya formatında ilgili dizin içerisinde dosya oluşturabiliyoruz. Örneğin;  “touch yenikla.py”
 
+•	“nano” >>> istediğiniz dosya içeriğini okuma, açma ve yorumlama işlemlerinde kullanılır. Bu bir terminal editörtür.  Örneğin;  “nano yenikla.py”
+Editör içerisinde yazdığınız, sildiğiniz veya düzenlediğiniz içeriği kaydetmek için CTRL ve X tuşlarına basmanız gerekmektedir. Gelen menüden “Y” harfine basıp ardından “ENTER”e basmamız gerekmektedir.
 
+“mv” >>> komutu bir dosyayı bir yerden biryere taşımamızı sağlamaktadır. 
 
+“top” >>> bu komut windows’taki görev yöneticisinin Raspberrian işletim sistemi üzerindeki benzeridir. Anlık çalışan komutlar ve görevlerin boyutları, süreleri ve ne kadar memory harcadıkları göstermektedir.
 
+--- Raspberry Pinlerinin Kullanımı ---
+
+GPIO.setmode(GPIO.BCM) >>> Kanal numarası ile çağrı yapılır.
+
+GPIO.setmode(GPIO.BOARD) >>>> Pin numarası ile çağrı yapılır.
+
+GPIO.setup(11, GPIO.IN) >>>> >Input pinlerinin belirlenmesi
+
+GPIO.setup(15, GPIO.OUT) >>>> Output pinlerinin belirlenmesi
+
+ÖRNEK PROGRAM 
+
+Bu programın amacı Raspberry donanımı python yazılım dili ile tanımlayıp butona basılıp basılmama durumu kontrol edilecektir.
+
+import RPi.GPIO as GPIO    >>>> Giriş ve çıkış pinlerinin kütüphanesini tanımladık. GPIO ismi verdik
+
+import time   >>>>
+
+GPIO.setmode(GPIO.BOARD) >>>> Buton tanımları
+
+GPIO.setup(10,GPIO.IN,pull_up_down=GPIO.PUD_DOWN) ) >>>> 10 numaralı pini buton giriş bilgisi için tanımladık. GPIO.PUD_DOWN ile butonun yukarı ve aşağı hareketinde 
+okumalar yapacak olduğumuzu sisteme belirttik.
+
+while True:  >>> sonsuz döngü oluşturduk.
+    time.sleep(1) >>>> bekleme verdik
+    if GPIO.input(10)==GPIO.HIGH: >>>Eğer 10.pinde butona basılma durumu mevcut mudur? 
+        print("Butona basilmistir") >>> Butona basıldı ise ekranda 
