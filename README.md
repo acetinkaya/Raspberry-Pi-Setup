@@ -60,4 +60,32 @@ Raspberry Pi’yi kendi donanımına bağlı klavye,mause ve monitör ile veya u
 
 Bu işlemler ile Raspberry yanınızda olmadığında modemden Raspberry’e port açıp uzaktan bağlantı sağlayabiliyoruz.
 
+---- Raspberry Üzerinde Saat ve Tarih Ayarlama ---
+
+sudo date -s "18 APR 2022 14:45"
+
+•	Tarih ve saat ayarlamanız sistem üzerinde yapacağınız işlemlerde size kolaylık sağlayacaktır. Kurulumlarda hata almamanız için bu işlem adımı önemlidir.
+
+--- Saat ve Tarih Ayarlaması Tamamlandı ---
+
+--- Terminal Ekranının Kullanımı ---
+
+Bu bölüm içerisinde Raspberry Pi’nin komut düzeyinde kullanımı belirtilmiştir. Komutlar üzerinden yapılacak işlemler farklı amaçlar için kullanılacaktır. Bunlardan bazıları işlevleriyle birlikte aşağıda verilmiştir;
+
+•	“ls” >>> donanım üzerinde tanımlı klasörleri görmeye sağlayacak komuttur. 
+
+•	“ls -alF” >>> komutu ile dizinlerdeki klasörlerin detayları öğrenilmektedir.
+
+•	“cd” >>> Mevcut klasörlerin dizinlerine girmemizi sağlayacak komuttur.  
+
+•	“cd ..” >>> Alt klasör dizinlerinden üst klasör dizinlerine geçmemizi sağlayacak olan komut komutudur. 
+
+•	“mkdir” >>> Bulunulan dizin içerisinde boş klasör oluştmaya yarayan komuttur. Örneğin; “mkdir yeniklasor”
+
+•	“rm -rf” >>> Bulunan dizin içerisinde kod içerisinde tanımlanacak olan klasörü silmemizi sağlar. Örneğin;  “rm -rf yeniklasor”
+
+•	“touch” >>> istediğimiz dosya formatında ilgili dizin içerisinde dosya oluşturabiliyoruz. Örneğin;  “touch yenikla.py”
+
+
+
 
