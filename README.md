@@ -120,3 +120,5 @@ while True:  >>> sonsuz döngü oluşturduk.
     time.sleep(1) >>>> bekleme verdik
     if GPIO.input(10)==GPIO.HIGH: >>>Eğer 10.pinde butona basılma durumu mevcut mudur? 
         print("Butona basilmistir") >>> Butona basıldı ise ekranda 
+       
+!!! This is just the start... more is coming.
